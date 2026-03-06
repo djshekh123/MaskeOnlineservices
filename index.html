@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maske - CSC Center & Online Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800 font-sans antialiased">
+
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <span class="text-3xl font-extrabold text-blue-700 tracking-tight">Maske Online services</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-semibold transition">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 font-semibold transition">Services</a>
+                    <a href="#why-us" class="text-gray-600 hover:text-blue-600 font-semibold transition">Why Us</a>
+                    <a href="#reviews" class="text-gray-600 hover:text-blue-600 font-semibold transition">Reviews</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full font-medium hover:bg-blue-700 transition shadow-md">Contact Us</a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none p-2">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-2xl absolute w-full left-0 top-20 z-50 flex flex-col">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#about" class="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium border-b border-gray-50">About</a>
+                <a href="#services" class="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium border-b border-gray-50">Services</a>
+                <a href="#why-us" class="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium border-b border-gray-50">Why Us</a>
+                <a href="#reviews" class="block px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-medium border-b border-gray-50">Reviews</a>
+                <a href="#contact" class="block px-4 py-3 text-blue-600 font-bold bg-blue-50 rounded-lg mt-2 text-center">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-1/2 space-y-6 text-center lg:text-left">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 font-semibold text-sm tracking-wide uppercase border border-blue-100">CSC & Digital Services</span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">Fast & Reliable <span class="text-blue-600">Online Services</span> Near You</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0">Government forms, CSC services, printing, internet, and digital support. 5‑star rated local service center helping residents access all online services in one place.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-8">
+                <a href="tel:+918262086722" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center shadow-lg shadow-blue-200 text-lg">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now
+                </a>
+                <a href="#contact" class="bg-white text-gray-800 border-2 border-gray-200 px-8 py-4 rounded-xl font-bold hover:border-blue-600 hover:text-blue-600 transition flex items-center justify-center shadow-sm text-lg">
+                    <i class="fas fa-paper-plane mr-2 text-blue-600"></i> Send Request
+                </a>
+            </div>
+        </div>
+        <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+             <img src="https://img.b2bpic.net/free-photo/hands-unrecognizable-man-using-smartphone-cafe-laptop-table_1098-17602.jpg?_wi=1" alt="Digital Services" class="rounded-2xl shadow-lg object-cover h-48 w-full md:h-64">
+             <img src="https://img.b2bpic.net/free-photo/vacant-modern-workspace-with-computers_482257-127194.jpg?_wi=1" alt="Workspace" class="rounded-2xl shadow-lg mt-8 object-cover h-48 w-full md:h-64">
+        </div>
+    </section>
+
+    <section id="about" class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <h4 class="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2">About Us</h4>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">Maske Online Service & CSC Center ‑ Your Local Digital Partner</h2>
+                <p class="text-lg text-gray-600 mb-10 leading-relaxed">We are dedicated to providing fast, reliable, and affordable online services to residents of Weni khu ,PO Harshi, and surrounding villages. Our team helps citizens easily access government services, CSC benefits, and digital solutions without the hassle of traveling to distant centers.</p>
+                
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+                    <div class="bg-blue-50 p-6 rounded-2xl w-40 border border-blue-100">
+                        <span class="text-4xl font-extrabold text-blue-600 block mb-2">5.0<i class="fas fa-star text-yellow-400 text-2xl"></i></span>
+                        <p class="text-gray-700 font-semibold">Google Rating</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-2xl w-40 border border-blue-100">
+                        <span class="text-4xl font-extrabold text-blue-600 block mb-2">100+</span>
+                        <p class="text-gray-700 font-semibold">Services Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h4 class="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2">Our Services</h4>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Complete Online Services in One Place</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">From government forms to digital documentation, we provide all services you need without multiple visits.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600 text-2xl">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Government Online Forms</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">Easy access to PAN Card applications, Aadhaar updates, Voter ID registration, job applications, and all government e-services.</p>
+                    <ul class="space-y-2 text-sm text-gray-500 font-medium">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>PAN Card & Aadhaar</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Voter ID & Registration</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Job Applications</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600 text-2xl">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">CSC Services</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">Government schemes, certificates, official documents, and complete digital service solutions available at your local center.</p>
+                    <ul class="space-y-2 text-sm text-gray-500 font-medium">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Government Schemes</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Certificates & Documents</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Instant Digital Services</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600 text-2xl">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Internet & Online Exams</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">High-speed internet access, safe browsing environment, email services, and support for online entrance exams.</p>
+                    <ul class="space-y-2 text-sm text-gray-500 font-medium">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>High-Speed Internet</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Online Exam Support</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Email & Online Access</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600 text-2xl">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Document Services</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">Professional printing, scanning, photocopying, and document management services for all your administrative needs.</p>
+                    <ul class="space-y-2 text-sm text-gray-500 font-medium">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Color & B/W Printing</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Photocopying Services</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Digital Scanning</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-blue-600 text-2xl">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Digital Help & Support</h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">Resume creation, online registrations, form filling assistance, and technical support from our experienced local team.</p>
+                    <ul class="space-y-2 text-sm text-gray-500 font-medium">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Resume Creation</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Form Assistance</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Technical Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h4 class="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2">Why Us</h4>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Why Choose Maske Online Service?</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+                <div class="p-6 bg-slate-50 rounded-2xl border border-gray-100">
+                    <i class="fas fa-star text-4xl text-yellow-400 mb-4"></i>
+                    <h4 class="font-bold text-gray-900 text-lg">5.0★ Rating</h4>
+                    <p class="text-sm text-gray-500 mt-2">Excellent Customer Rating</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-gray-100">
+                    <i class="fas fa-bolt text-4xl text-blue-500 mb-4"></i>
+                    <h4 class="font-bold text-gray-900 text-lg">Fast</h4>
+                    <p class="text-sm text-gray-500 mt-2">Speedy Service & Processing</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-gray-100">
+                    <i class="fas fa-map-marker-alt text-4xl text-red-500 mb-4"></i>
+                    <h4 class="font-bold text-gray-900 text-lg">Local</h4>
+                    <p class="text-sm text-gray-500 mt-2">Right Here in Your Community</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-gray-100">
+                    <i class="fas fa-cubes text-4xl text-purple-500 mb-4"></i>
+                    <h4 class="font-bold text-gray-900 text-lg">All-in-One</h4>
+                    <p class="text-sm text-gray-500 mt-2">Every Service in One Place</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-gray-100">
+                    <i class="fas fa-rupee-sign text-4xl text-green-500 mb-4"></i>
+                    <h4 class="font-bold text-gray-900 text-lg">Affordable</h4>
+                    <p class="text-sm text-gray-500 mt-2">Best Prices in Town</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-2xl border border-gray-100">
+                    <i class="fas fa-shield-check text-4xl text-indigo-500 mb-4"></i>
+                    <h4 class="font-bold text-gray-900 text-lg">Verified</h4>
+                    <p class="text-sm text-gray-500 mt-2">Genuine CSC Services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="bg-gray-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">See what our clients say</h2>
+                <p class="text-gray-400 text-lg">Over 4,000 satisfied customers trust us for their digital and government service needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-800 p-6 rounded-2xl">
+                    <div class="flex text-yellow-400 mb-4 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-300 mb-6 text-sm">"Extremely fast and reliable service. Got my documents sorted within minutes without any hassle."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center font-bold mr-3">AH</div>
+                        <h4 class="font-bold">Aniket Hatkar</h4>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl">
+                    <div class="flex text-yellow-400 mb-4 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-300 mb-6 text-sm">"Best CSC center in our area. The staff is polite, helpful, and knows exactly what needs to be done."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center font-bold mr-3">SG</div>
+                        <h4 class="font-bold">Sachin Gavhane</h4>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl">
+                    <div class="flex text-yellow-400 mb-4 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-300 mb-6 text-sm">"Highly recommended for PAN card and Aadhaar services. Very reasonable charges and fast delivery."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center font-bold mr-3">GG</div>
+                        <h4 class="font-bold">Gajanan Gavhane</h4>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl">
+                    <div class="flex text-yellow-400 mb-4 text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-gray-300 mb-6 text-sm">"Great printing and internet services. Always my go-to place for filling online government forms."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center font-bold mr-3">RK</div>
+                        <h4 class="font-bold">Ramesh Kumar</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-blue-600 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row bg-white rounded-3xl overflow-hidden shadow-2xl">
+                <div class="lg:w-1/2 p-10 md:p-16 bg-blue-50">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-900">Need Help with Online Forms?</h2>
+                    <p class="text-gray-600 mb-8">We're here to make everything simple and hassle‑free. Contact us today for instant assistance. Open Until 10 PM.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center p-4 bg-white rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl mr-4"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4 class="text-sm text-gray-500 font-semibold">Call us directly</h4>
+                                <a href="tel:+918262086722" class="text-lg font-bold text-gray-900">+91 8262086722</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-white rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xl mr-4"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <h4 class="text-sm text-gray-500 font-semibold">Chat with us</h4>
+                                <a href="https://wa.me/918262086722" target="_blank" class="text-lg font-bold text-gray-900">WhatsApp Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 p-10 md:p-16">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-900">Send us a Request</h3>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+                        
+                        <input type="hidden" name="access_key" value="20aee8db-c271-413c-950b-9f317f87b7e3">
+                        
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" name="name" required placeholder="Enter your name" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" name="email" required placeholder="Enter your email" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
+                            <input type="tel" name="phone" required placeholder="Enter your mobile number" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">How can we help?</label>
+                            <textarea name="message" required placeholder="Tell us what service you need..." rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition shadow-lg flex justify-center items-center">
+                            Submit Request <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </form>
+                    ```
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center border-t border-gray-800">
+        <p class="font-medium">&copy; 2025 Maske Online Service & CSC Center | All Rights Reserved</p>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 flex flex-col space-y-4 z-50">
+        <a href="https://wa.me/918262086722" target="_blank" class="flex items-center justify-center w-14 h-14 bg-green-500 text-white rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition-transform duration-300 group relative">
+            <i class="fab fa-whatsapp text-3xl"></i>
+            <span class="absolute right-16 bg-gray-900 text-white text-sm px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap font-medium pointer-events-none shadow-lg">WhatsApp Us</span>
+        </a>
+
+        <a href="tel:+918262086722" class="flex items-center justify-center w-14 h-14 bg-blue-600 text-white rounded-full shadow-2xl hover:bg-blue-700 hover:scale-110 transition-transform duration-300 group relative">
+            <i class="fas fa-phone-alt text-2xl"></i>
+            <span class="absolute right-16 bg-gray-900 text-white text-sm px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap font-medium pointer-events-none shadow-lg">Call Us</span>
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            // Toggle menu on button click
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Close menu when a link is clicked
+            const mobileLinks = menu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+    </body>
+</html>
